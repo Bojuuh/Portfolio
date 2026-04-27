@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Series on Markus Portfolio</title>
+    <title>Series on Markus Bjerrum Jørgensen</title>
     <link>http://localhost:1313/series/</link>
-    <description>Recent content in Series on Markus Portfolio</description>
+    <description>Recent content in Series on Markus Bjerrum Jørgensen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>© 2026 </copyright>
+    <managingEditor>mbjerrumj@gmail.com (Markus Bjerrum Jørgensen)</managingEditor>
+    <webMaster>mbjerrumj@gmail.com (Markus Bjerrum Jørgensen)</webMaster>
+    <copyright>© 2026 Markus Bjerrum Jørgensen</copyright>
     <atom:link href="http://localhost:1313/series/index.xml" rel="self" type="application/rss+xml" />
     
   </channel>

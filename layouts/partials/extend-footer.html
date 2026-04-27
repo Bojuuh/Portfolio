@@ -1,0 +1,66 @@
+<script>
+ window.difyChatbotConfig = {
+  token: 'iPWbTfPTlqn2RHhI',
+  inputs: {
+    // You can define the inputs from the Start node here
+    // key is the variable name
+    // e.g.
+    // name: "NAME"
+  },
+  systemVariables: {
+    // user_id: 'YOU CAN DEFINE USER ID HERE',
+    // conversation_id: 'YOU CAN DEFINE CONVERSATION ID HERE, IT MUST BE A VALID UUID',
+  },
+  userVariables: {
+    // avatar_url: 'YOU CAN DEFINE USER AVATAR URL HERE',
+    // name: 'YOU CAN DEFINE USER NAME HERE',
+  },
+ }
+</script>
+<script
+ src="https://udify.app/embed.min.js"
+ id="iPWbTfPTlqn2RHhI"
+ defer>
+</script>
+<style>
+  /* 💬 Chat bubble button */
+  #dify-chatbot-bubble-button {
+    background: linear-gradient(135deg, #7c3aed, #f97316) !important;
+    border-radius: 999px !important;
+    box-shadow:
+      0 8px 25px rgba(124, 58, 237, 0.4),
+      0 4px 15px rgba(249, 115, 22, 0.3) !important;
+    bottom: 24px !important;
+    right: 24px !important;
+    transition: all 0.2s ease !important;
+  }
+
+  #dify-chatbot-bubble-button:hover {
+    transform: translateY(-3px) scale(1.05);
+  }
+
+  /* 🪟 Chat window */
+  #dify-chatbot-bubble-window {
+    width: 24rem !important;
+    height: 40rem !important;
+    border-radius: 1.25rem !important;
+    overflow: hidden !important;
+    box-shadow:
+      0 20px 60px rgba(124, 58, 237, 0.25),
+      0 10px 30px rgba(249, 115, 22, 0.2) !important;
+  }
+
+  /* 🧊 Optional: soften edges */
+  #dify-chatbot-bubble-window iframe {
+    border-radius: 1.25rem !important;
+  }
+
+  /* 📱 Mobile tweak */
+  @media (max-width: 768px) {
+    #dify-chatbot-bubble-window {
+      width: 95vw !important;
+      height: 80vh !important;
+      right: 2.5vw !important;
+    }
+  }
+</style>

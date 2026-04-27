@@ -11,7 +11,7 @@ autoSwitchAppearance = true
 
 enableA11y = false
 enableSearch = true
-enableCodeCopy = false
+enableCodeCopy = true
 enableStructuredBreadcrumbs = false
 # enableStyledScrollbar = true # disable to use native scrollbar style (defaults to true)
 
@@ -19,6 +19,7 @@ replyByEmail = false
 
 # mainSections = ["section1", "section2"]
 # robots = ""
+mainSections = ["blog"]
 
 disableImageOptimization = false
 disableImageOptimizationMD = false
@@ -51,16 +52,13 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showScrollToTop = true
 
 [homepage]
-  layout = "profile" # valid options: page, profile, hero, card, background, custom
-  #homepageImage = "IMAGE.jpg" # used in: hero, and card
-  showRecent = false
-  showRecentItems = 5
+  layout = "page"
+  showRecent = true
+  showRecentItems = 3
   showMoreLink = false
-  showMoreLinkDest = "/posts/"
-  cardView = false
+  showMoreLinkDest = "/blog/"
+  cardView = true
   cardViewScreenWidth = false
-  layoutBackgroundBlur = false # only used when layout equals background
-  disableHeroImageFilter = false # only used when layout equals hero
 
 [article]
   showDate = true
@@ -180,3 +178,5 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
 
 [advertisement]
   # adsense = ""
+
+customCSS = ["css/custom.css"]

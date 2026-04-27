@@ -1,3 +1,192 @@
-.skip-link {
-  display: none;
+:root {
+  --markus-purple: #7c3aed;
+  --markus-orange: #f97316;
+
+  --markus-purple-soft: rgba(124, 58, 237, 0.12);
+  --markus-orange-soft: rgba(249, 115, 22, 0.12);
+
+  --markus-text-soft: rgba(120, 120, 120, 0.9);
+}
+
+/* 🌈 Background glow */
+body {
+  background:
+    radial-gradient(circle at top left, var(--markus-purple-soft), transparent 35rem),
+    radial-gradient(circle at bottom right, var(--markus-orange-soft), transparent 30rem);
+}
+
+main {
+  padding-bottom: 3rem;
+}
+
+footer {
+  border-top: none !important;
+}
+
+.max-w-prose {
+  margin-bottom: 0 !important;
+}
+/* 🧊 Header */
+header a:hover {
+  color: var(--markus-purple);
+}
+
+/* 🧑‍💻 Hero */
+.portfolio-hero {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 3rem;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.55);
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.08);
+}
+
+.dark .portfolio-hero {
+  background: rgba(20, 20, 24, 0.65);
+}
+
+.portfolio-image img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 2rem;
+  box-shadow:
+    0 15px 30px rgba(124, 58, 237, 0.3),
+    0 5px 20px rgba(249, 115, 22, 0.2);
+}
+
+/* ✨ Typography */
+.portfolio-intro h1 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  margin-bottom: 0.25rem;
+  line-height: 1;
+}
+
+.portfolio-intro h3 {
+  font-weight: 600;
+  background: linear-gradient(90deg, var(--markus-purple), var(--markus-orange));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 0;
+}
+
+.portfolio-intro p {
+  max-width: 650px;
+  line-height: 1.7;
+  color: var(--markus-text-soft);
+}
+
+/* 🔗 Social icons */
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin: 0.75rem 0 1.5rem;
+}
+
+.social-links a {
+  display: inline-flex;
+  width: 2rem;
+  height: 2rem;
+  padding: 0.35rem;
+  border-radius: 999px;
+  background: var(--markus-purple-soft);
+  color: var(--markus-purple);
+  transition: 0.2s ease;
+}
+
+.social-links a:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(135deg, var(--markus-purple), var(--markus-orange));
+  color: white;
+}
+
+.social-links svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* 🔘 Buttons */
+.portfolio-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.portfolio-links a {
+  padding: 0.75rem 1.1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(90deg, var(--markus-purple), var(--markus-orange)) border-box;
+  color: var(--markus-purple);
+  transition: 0.2s ease;
+}
+
+.dark .portfolio-links a {
+  background: linear-gradient(#121212, #121212) padding-box,
+              linear-gradient(90deg, var(--markus-purple), var(--markus-orange)) border-box;
+}
+
+.portfolio-links a:hover {
+  background: linear-gradient(90deg, var(--markus-purple), var(--markus-orange));
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* 📰 Cards (blog/projects) */
+.group {
+  border-radius: 1.25rem;
+  transition: 0.2s ease;
+}
+
+.group:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 15px 40px rgba(124, 58, 237, 0.15),
+    0 5px 25px rgba(249, 115, 22, 0.15);
+}
+
+/* 🔗 Links inside content */
+.prose a {
+  color: var(--markus-purple);
+  text-decoration: none;
+  border-bottom: 1px solid var(--markus-purple);
+}
+
+.prose a:hover {
+  color: var(--markus-orange);
+  border-color: var(--markus-orange);
+}
+
+#dify-chatbot-bubble-button {
+  bottom: 20px !important;
+  right: 20px !important;
+  box-shadow: 0 8px 25px rgba(124, 58, 237, 0.4);
+}
+
+
+/* 📱 Mobile */
+@media (max-width: 768px) {
+  .portfolio-hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .portfolio-image img {
+    margin: 0 auto;
+    width: 220px;
+    height: 220px;
+  }
+
+  .social-links,
+  .portfolio-links {
+    justify-content: center;
+  }
 }
