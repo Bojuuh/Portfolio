@@ -121,8 +121,8 @@
   <link
     type="text/css"
     rel="stylesheet"
-    href="/css/main.bundle.min.2332972b810d83e89d6637696a73b78dc90b3246ffbe6cea4eb727645294d092b8d0ecd8462f87e4273aae61d425db28c95cd32638ca58839210abd05493e629.css"
-    integrity="sha512-IzKXK4ENg&#43;idZjdpanO3jckLMkb/vmzqTrcnZFKU0JK40OzYRi&#43;H5Cc6rmHUJdsoyVzTJjjKWIOSEKvQVJPmKQ==">
+    href="/css/main.bundle.min.6cd18acb70decff93cc3aec62cbf5cceb9c6b3a002d35b37f5e1f8c55835c23a4870584c39643cc6df0ec8585b45500eb9162addeece55331769b4d991fb3705.css"
+    integrity="sha512-bNGKy3Dez/k8w67GLL9czrnGs6AC01s39eH4xVg1wjpIcFhMOWQ8xt8OyFhbRVAOuRYq3e7OVTMXabTZkfs3BQ==">
 
   
   
@@ -247,7 +247,7 @@
     "keywords": ["AI","RAG","Chatbot","Dify","Portfolio"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "404"
+    "wordCount": "736"
   }]
   </script>
 
@@ -595,7 +595,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2026-04-27T00:00:00&#43;00:00">27 April 2026</time><span class="px-2 text-primary-500">&middot;</span><span>404 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span>
+      <time datetime="2026-04-27T00:00:00&#43;00:00">27 April 2026</time><span class="px-2 text-primary-500">&middot;</span><span>736 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">4 mins</span>
     
 
     
@@ -832,6 +832,35 @@
 <p>I set up a <strong>GitHub Actions workflow</strong> that automatically uploads my markdown content to Dify whenever I push updates to GitHub.</p>
 <p>That means:</p>
 <div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">Write blog post → Push to GitHub → Knowledge updates → Chatbot learns new content</span></span></code></pre></div></div>
+
+<h2 class="relative group">What I Learned
+    <div id="what-i-learned" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#what-i-learned" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<p>One thing I learned during this project is that building a RAG chatbot sounds much more complicated than it actually is — at least once all the pieces click.</p>
+<p>At first, the hardest part wasn’t setting up the chatbot itself. Dify made that part surprisingly straightforward. The real challenge was figuring out how to connect everything together in a way that made sense. I ran into problems with syncing content, GitHub Actions not triggering correctly, and making sure new blog posts were actually uploaded to the chatbot’s knowledge base.</p>
+<p>Getting the automation working was probably the biggest hurdle. Once I understood how GitHub Actions worked and how it could connect my portfolio content directly to Dify, everything suddenly became much simpler. After that, it turned into a system that more or less manages itself.</p>
+<p>I also learned that small technical details matter a lot. Something as simple as a wrong file path or a typo in a workflow script was enough to stop the entire sync process. Debugging those issues taught me a lot about automation and how different services connect behind the scenes.</p>
+<p>Overall, the biggest takeaway is that AI integration doesn’t have to be overly complex. Once the setup is in place, it becomes surprisingly simple to maintain.</p>
+
+<h2 class="relative group">Conclusion
+    <div id="conclusion" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#conclusion" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<p>Now that everything is set up, the best part is that I don’t really have to think about it anymore.</p>
+<p>Whenever I write a new blog post and push it to GitHub, GitHub Actions automatically uploads it to Dify, updates the chatbot’s knowledge, and makes that content available for future conversations. That means the chatbot grows together with my portfolio without any manual work from me.</p>
+<p>What started as a small experiment turned into something I’m genuinely proud of. It’s a practical use of AI, it improves my portfolio, and it gave me hands-on experience with building a real AI-driven application.</p>
+<p>And honestly — now that I understand how it works — it feels surprisingly simple.</p>
 
           
           
