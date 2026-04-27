@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Portfolio on Markus Bjerrum Jørgensen</title>
+    <link>http://localhost:1313/tags/portfolio/</link>
+    <description>Recent content in Portfolio on Markus Bjerrum Jørgensen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>mbjerrumj@gmail.com (Markus Bjerrum Jørgensen)</managingEditor>
+    <webMaster>mbjerrumj@gmail.com (Markus Bjerrum Jørgensen)</webMaster>
+    <copyright>© 2026 Markus Bjerrum Jørgensen</copyright>
+    <lastBuildDate>Mon, 27 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Building a RAG Chatbot for My Portfolio</title>
+      <link>http://localhost:1313/blog/rag-chatbot/</link>
+      <pubDate>Mon, 27 Apr 2026 00:00:00 +0000</pubDate>
+      <author>mbjerrumj@gmail.com (Markus Bjerrum Jørgensen)</author>
+      <guid>http://localhost:1313/blog/rag-chatbot/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>
