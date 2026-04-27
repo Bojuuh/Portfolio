@@ -41,4 +41,4 @@ jobs:
                 }
               };type=application/json' \
               --form "file=@${file}"
-          done < files.txt%
+          done < files.txt
