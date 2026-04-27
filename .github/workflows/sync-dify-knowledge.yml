@@ -1,0 +1,43 @@
+name: Sync blog posts to Dify
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "content/blog/**/*.md"
+      - "content/about.md"
+  workflow_dispatch:
+
+jobs:
+  sync-dify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Upload markdown files to Dify
+        env:
+          DIFY_API_KEY: ${{ secrets.DIFY_API_KEY }}
+          DIFY_DATASET_ID: ${{ secrets.DIFY_DATASET_ID }}
+        run: |
+          find content/blog -name "*.md" -type f > files.txt
+
+          if [ -f content/about.md ]; then
+            echo "content/about.md" >> files.txt
+          fi
+
+          while read file; do
+            echo "Uploading $file"
+
+            curl --location --request POST "https://api.dify.ai/v1/datasets/${DIFY_DATASET_ID}/document/create-by-file" \
+              --header "Authorization: Bearer ${DIFY_API_KEY}" \
+              --form 'data={
+                "indexing_technique": "high_quality",
+                "process_rule": {
+                  "mode": "automatic"
+                }
+              };type=application/json' \
+              --form "file=@${file}"
+          done < files.txt%
